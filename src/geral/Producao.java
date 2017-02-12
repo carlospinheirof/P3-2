@@ -4,8 +4,13 @@ import java.util.ArrayList;
 
 public class Producao {
 	String nome;
-	int dataInicio;
-	int dataFinal;
+	int diaInicio;
+	int mesInicio;
+	int anoInicio;
+	int diaFinal;
+	int mesFinal;
+	int anoFinal;
+	long totalComparar;
 	ArrayList <Colaboradores> colaboradores = new ArrayList<Colaboradores>();
 	public boolean umnovocolaborador(Colaboradores novo){
 		if(colaboradores.add(novo)){

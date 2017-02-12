@@ -1,10 +1,33 @@
 package geral;
 
+import java.util.ArrayList;
 import java.util.TreeSet;
 
 public class Colaboradores {
-		public String nome;
+		String nome;
 		public String email;
-		public TreeSet <Projetos> projetos = new TreeSet<Projetos>();
+		public ArrayList <Projetos> projetos = new ArrayList<Projetos>();
+		public ArrayList <Publicacao> producoes = new ArrayList<Publicacao>();
 		public int quantosProjetos;
+		
+		public String getname(){
+			return this.nome;
+		}
+		public void setname(String n){
+			this.nome = n;
+		}
+		boolean adicionarprojeto(Projetos r){
+			if(projetos.add(r)){
+				return true;
+			}
+			else{
+				return false;
+			}
+		}
+		public ArrayList <Publicacao> getListaPublicacoes(){
+			return producoes;
+		}
+		public ArrayList <Projetos> getListaProjetos(){
+			return projetos;
+		}
 }

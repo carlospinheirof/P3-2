@@ -7,6 +7,7 @@ public class Projetos extends Producao{
 	int temUmProfessor;
 	int andamento;
 	int numeroDePublicacoes;
+	int numeroDegraduandoscom2;
 	String financiadora;
 	float valorFinanciado;
 	String objetivo;
