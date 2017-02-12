@@ -1,8 +1,6 @@
 package geral;
 
 import java.util.ArrayList;
-import java.util.TreeSet;
-
 public class Colaboradores {
 		String nome;
 		public String email;
